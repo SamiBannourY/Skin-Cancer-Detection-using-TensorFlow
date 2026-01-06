@@ -3,12 +3,12 @@ The goal is to automate skin cancer screening from dermoscopic images, which can
 🧠 Overview
 
 Skin cancer detection from visual data is a critical task in medical imaging and diagnostics. In this project, we apply state-of-the-art deep learning methods to classify dermoscopic images of skin lesions into two categories: benign and malignant. 
-GeeksforGeeks
+
 
 📦 Dataset
 
 The dataset consists of images categorized into two folders—benign and malignant cases—commonly sourced from public datasets like ISIC on Kaggle. The images are pre-organized in subdirectories to allow easy loading with Python scripts. 
-GeeksforGeeks
+
 
 🛠 Built With
 
@@ -37,7 +37,7 @@ Create a DataFrame mapping each image path to its label (benign or malignant).
 Convert labels to binary (0/1).
 
 Split into training/validation sets. 
-GeeksforGeeks
+
 
 3. Define Preprocessing Pipeline
 def decode_image(filepath, label=None):
@@ -49,7 +49,7 @@ def decode_image(filepath, label=None):
 
 
 Resize and normalize images for the model input. 
-GeeksforGeeks
+
 
 4. Build the Model using Transfer Learning
 from tensorflow.keras.applications.efficientnet import EfficientNetB7
@@ -63,7 +63,7 @@ for layer in pre_trained_model.layers:
 
 
 Use EfficientNetB7 (ImageNet pretrained) as feature extractor. 
-GeeksforGeeks
+
 
 5. Train the Model
 model.compile(
@@ -75,12 +75,12 @@ history = model.fit(train_ds, validation_data=val_ds, epochs=5)
 
 
 Train over multiple epochs observing validation performance. 
-GeeksforGeeks
+
 
 6. Visualize Training Progress
 
 Plot training/validation loss and AUC curves to evaluate performance over time. 
-GeeksforGeeks
+
 
 📊 Results
 
@@ -91,7 +91,7 @@ Training and validation loss
 Training and validation AUC
 
 These metrics help assess overfitting and predictive quality. 
-GeeksforGeeks
+
 
 💡 Next Enhancements
 
