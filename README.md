@@ -1,5 +1,6 @@
 # Skin-Cancer-Detection-using-TensorFlow
 The goal is to automate skin cancer screening from dermoscopic images, which can assist early diagnosis and improve clinical outcomes.
+
 🧠 Overview
 
 Skin cancer detection from visual data is a critical task in medical imaging and diagnostics. In this project, we apply state-of-the-art deep learning methods to classify dermoscopic images of skin lesions into two categories: benign and malignant. 
